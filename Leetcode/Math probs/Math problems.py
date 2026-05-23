@@ -70,3 +70,54 @@ def count_occurences(arr,key):                   # count occurences
     print(f"{key} occured {count} times")        
     
 count_occurences([1,2,1,1,3],1) 
+
+
+
+n = 10                                            # Decimal to Binary
+binary = ""
+
+while n > 0:
+    binary = str(n % 2) + binary
+    n //= 2
+
+print(binary)
+
+
+binary = "1010"                                   # Binary to Decimal
+decimal = 0
+power = 0
+
+for digit in reversed(binary):
+    decimal += int(digit) * (2 ** power)
+    power += 1
+
+print(decimal)
+
+     
+year = 2024                                      # Leap year
+
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print("Leap Year")
+else:
+    print("Not Leap Year")
+
+
+n = 145                                         # Strong Number
+original = n
+sum_val = 0
+
+while n > 0:
+    digit = n % 10
+
+    fact = 1
+    for i in range(1, digit + 1):
+        fact *= i
+
+    sum_val += fact
+    n //= 10
+
+print("Strong Number" if sum_val == original else "Not Strong")
+
+
+
+
