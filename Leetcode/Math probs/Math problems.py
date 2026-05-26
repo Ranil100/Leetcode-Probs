@@ -118,6 +118,25 @@ while n > 0:
 
 print("Strong Number" if sum_val == original else "Not Strong")
 
+  
+n = 123456                                              # count num of odd and even nums in the digit
+
+even = 0
+odd = 0
+
+while n > 0:
+    digit = n % 10
+
+    if digit % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+
+    n //= 10
+
+print("Even:", even)
+print("Odd:", odd)
+
 
 
 
