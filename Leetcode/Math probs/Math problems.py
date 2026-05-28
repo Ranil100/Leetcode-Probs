@@ -135,6 +135,14 @@ while n > 0:
     n //= 10
 
 print("Even:", even)
+
+n = 5                                                  #Find Sum of Squares
+sum_sq = 0
+
+for i in range(1, n + 1):
+    sum_sq += i * i
+
+print(sum_sq)
 print("Odd:", odd)
 
 
